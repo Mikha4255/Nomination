@@ -6,7 +6,7 @@ body{
     background-color: #1d1102;
     overflow-x: hidden; 
     width: 100%;
-    margin: 0;
+    margin: 0; 
     padding: 0;
 }
 
@@ -375,7 +375,7 @@ hr {
 
 .allnom{
     display: flex;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: nowrap;
     padding: 20px 50px;
     overflow-x: auto; 
@@ -390,6 +390,12 @@ hr {
     border: 3px solid rgba(255, 95, 31, 0.5);
     border-radius: 20px;
     color: #ff6f00;
+    margin: 25px 0px;
+}
+
+.nomcard:hover{
+  transform: scale(1.2);
+  transition: 0.42s;
 }
 
 .nomcard img{
