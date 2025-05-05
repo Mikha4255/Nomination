@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
- 
+
 body{
     background-color: #1d1102;
     overflow-x: hidden; 
@@ -391,6 +391,7 @@ hr {
     border-radius: 20px;
     color: #ff6f00;
     margin: 25px 0px;
+    padding: 10px;
 }
 
 .nomcard:hover{
@@ -585,4 +586,238 @@ footer nav a{
   font-size: 40px;
   bottom: -250px;
   left: 760px;
+}
+
+@media(max-width: 560px){
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .logo img{
+    height: 50px;
+}
+
+  nav{
+    right: 50px;
+}
+
+nav ul{
+    gap: 5px;
+}
+
+nav ul li{
+    font-size: 15px;
+}
+
+.intr{
+  font-size: 70px;
+  height: 900px;
+}
+
+.intr h1{
+  left: 80px;
+  top: 10px;
+}
+
+.bord{
+  width: 100%;
+  height: 600px;
+  border-radius: 50px;
+}
+
+.p1{
+  font-size: 20px;
+  left: 100px;
+  top: 40px;
+}
+.p2{
+  font-size: 20px;
+  left: 140px;
+  top: 60px;
+}
+
+.p3{
+  left: 30px;
+  top: 400px;
+}
+
+.p4{
+  left: 30px;
+  top: 470px;
+}
+
+.p5{
+  left: 30px;
+  top: 500px;
+}
+
+.p6{
+  left: 120px;
+  top: 575px;
+}
+
+.img1{
+  height: 200px;
+  right: 100px;
+  top: 210px;
+}
+
+.sup1{
+  height: 60px;
+  left: 120px;
+  top: 650px;
+  border-radius: 30px;
+}
+.sup2{
+  height: 60px;
+  left: 250px;
+  top: 650px;
+  border-radius: 30px;
+}
+.sup3{
+  height: 60px;
+  left: 120px;
+  top: 750px;
+  border-radius: 30px;
+}
+.sup4{
+  height: 60px;
+  left: 250px;
+  top: 750px;
+  border-radius: 30px;
+}
+
+.sabl{
+  font-size: 40px;
+}
+
+.op{
+  font-size: 25px;
+}
+
+.ray {
+  width: 200px;
+  height: 50vh;
+}
+
+.nom{
+  font-size: 30px;
+  padding: 10px;
+}
+
+.nom h2{
+  font-size: 50px;
+}
+
+.nom p{
+font-size: 25px;
+}
+
+.mainnom{
+  display: flex;
+  gap: 10px;
+  padding: 20px 90px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.allnom{
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    padding: 20px 90px;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+}
+
+.nomcard{
+    width: 200px;
+    height: 380px;
+    flex-shrink: 0;
+    text-align: center;
+    border-radius: 20px;
+    margin: 25px 0px;
+}
+
+.nomcard:hover{
+  transform: scale(1.05);
+}
+
+.nomcard img{
+    width: 150px;
+    height: 150px;
+}
+
+.nomcard h3{
+    font-size: 25px;
+}
+
+.sma{
+    font-size: 16px;
+}
+
+.nomcard p{
+    font-size: 20px;
+}
+
+.queandans{
+  padding: 20px;
+}
+
+.menu {
+  list-style-type: none;
+    padding: 0; 
+    width: 80%; 
+    max-width: 800px; 
+}
+
+.menu li{
+  width: 600px;
+}
+
+.dropdown {
+  position: relative;
+  list-style: none; 
+}
+
+.dropdown label{
+  width: 380px;
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 12px 12px;
+  height: 110px;
+  margin-top: 20px;
+}
+
+.dropdown-menu {
+  display: none; 
+    padding: 15px;
+    margin-top: 10px; 
+    border-radius: 15px;
+    background-color: #1d1102;
+    font-size: 20px;
+    line-height: 1.5; /* Межстрочный интервал */
+    animation: fadeIn 0.3s ease; /* Применяем анимацию */
+}
+
+.dropdown-menu li {
+  display: block;
+  text-align: center;
+  width: 320px;
+  color: #d1e8e2;
+  font-size: 30px;
+  border: 3px solid rgba(255, 95, 31, 0.7);
+  border-radius: 30px;
+  padding: 8px 12px;
+  margin: 10px 0px;
+}
+
+footer nav{
+  left: 100px;
+}
+
+.imp{
+  left: 160px;
+}
+
 }
