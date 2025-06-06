@@ -11,12 +11,12 @@ body{
 }
 
 html{
-    scroll-behavior: smooth;
-}
+    scroll-behavior: smooth; 
+} 
 
 p{
     color: #FFCB9A;
-    font-family: "DM Serif Text", serif;
+    font-family: "DM Serif Text", serif; 
 } 
 
 div{
@@ -72,7 +72,7 @@ hr {
     color: #ff6f00;
     font-family: "Comforter", cursive;
     text-align: center;
-    font-size: 170px;
+    font-size: 160px;
     display: flex;
     justify-content: center;
     height: 850px;
@@ -81,8 +81,8 @@ hr {
 
 .intr h1{
     position: absolute;
-    left: 80px;
-    top: -30px;
+    left: 20px;
+    top: 5px;
 }
 
 .p1{
@@ -154,7 +154,7 @@ hr {
 .img1{
     position: absolute;
     height: 350px;
-    right: 40px;
+    left: 650px;
     top: 130px;
 }
 
@@ -190,7 +190,7 @@ hr {
 .bord{
     position: relative;
     top: 50px;
-    width: 70%;
+    width: 1050px;
     height: 650px;
     border: 3px solid rgb(224, 105, 1);
     border-radius: 50px;
@@ -215,6 +215,16 @@ hr {
     color: #d1e8e2;
 }
 
+.op a{
+  color: #ff6f00;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.op a:hover{
+  color: #d1e8e2;
+  transition: 0.42s;
+}
 /* Базовые стили для всех лучей */
 .ray {
     position: absolute;
@@ -395,7 +405,7 @@ hr {
 }
 
 .nomcard:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.42s;
 }
 
@@ -438,7 +448,7 @@ hr {
   color: #FFCB9A;
   display: flex;
   align-items: center; 
-  padding: 20px;
+  padding-left: 60px;
 }
 .que{
   font-size: 50px;
@@ -464,7 +474,7 @@ hr {
 }
 
 .dropdown label{
-  width: 1550px;
+  width: 1300px;
   font-family: "DM Serif Text", serif;
   font-size: 30px;
   text-align: center;
@@ -500,7 +510,7 @@ hr {
 .dropdown-menu li {
   display: block;
   text-align: center;
-  width: 1300px;
+  width: 1000px;
   color: #d1e8e2;
   font-size: 30px;
   border: 3px solid rgba(255, 95, 31, 0.7);
@@ -540,6 +550,7 @@ hr {
 footer{
   position: relative;
   text-align: center;
+  align-items: center;
   margin-top: 20px;
   border-top: 3px solid #ff6f00;
   font-size: 25px;
@@ -566,7 +577,7 @@ footer ul{
 footer nav{
   display: flex;
   position: absolute;
-  left: 700px;
+  left: 620px;
   bottom: -150px ;
 }
 footer nav ul{
@@ -581,11 +592,8 @@ footer nav a{
 }
 
 .imp{
-  position: absolute;
   font-family: "Comforter", cursive;
   font-size: 40px;
-  bottom: -250px;
-  left: 760px;
 }
 
 @media(max-width: 560px){
@@ -620,7 +628,7 @@ nav ul li{
 }
 
 .bord{
-  width: 100%;
+  width: 400px;
   height: 600px;
   border-radius: 50px;
 }
@@ -658,7 +666,7 @@ nav ul li{
 
 .img1{
   height: 200px;
-  right: 100px;
+  left: 100px;
   top: 210px;
 }
 
@@ -719,6 +727,7 @@ font-size: 25px;
   padding: 20px 90px;
   flex-wrap: nowrap;
   flex-direction: column;
+  align-items: center;
 }
 
 .allnom{
@@ -728,6 +737,7 @@ font-size: 25px;
     padding: 20px 90px;
     overflow-x: hidden; 
     overflow-y: hidden; 
+    align-items: center;
 }
 
 .nomcard{
@@ -761,7 +771,7 @@ font-size: 25px;
 }
 
 .queandans{
-  padding: 20px;
+  padding-left: 70px;
 }
 
 .menu {
@@ -813,7 +823,7 @@ font-size: 25px;
 }
 
 footer nav{
-  left: 100px;
+  left: 150px;
 }
 
 .imp{
