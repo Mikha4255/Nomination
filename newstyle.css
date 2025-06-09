@@ -153,9 +153,13 @@ hr {
 
 .img1{
     position: absolute;
-    height: 350px;
+    height: 370px;
     left: 650px;
-    top: 130px;
+    top: 140px;
+}
+
+.img1:active{
+  background-image: url("42.gif");
 }
 
 .sup1{
@@ -425,6 +429,10 @@ hr {
     border-radius: 20px;
 }
 
+.mem:active{
+  background-image: url("42.gif");
+}
+
 .nomcard h3{
     font-size: 30px;
 }
@@ -459,6 +467,24 @@ hr {
   align-items: center; 
   padding-left: 60px;
 }
+
+.quea{
+  font-size: 25px;
+  color: #ff6f00;
+  font-family: "DM Serif Text", serif;
+  text-align: center;
+}
+
+.quea a{
+  text-decoration: none;
+  color: #f1d26c;
+}
+
+.quea a:hover{
+  transition: 0.42s;
+  color: #ae0606;
+}
+
 .que{
   font-size: 50px;
   color: #ff6f00;
@@ -526,6 +552,16 @@ hr {
   border-radius: 30px;
   padding: 8px 12px;
   margin: 10px 100px 0px;
+}
+
+.dropdown-menu a{
+  text-decoration: none;
+  color: #f9c99c;
+}
+
+.dropdown-menu a:hover{
+  transition: 0.42s;
+  color: #e0e6e4;
 }
 
 .dropdown-menu li:hover {
