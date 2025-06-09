@@ -216,9 +216,18 @@ hr {
 }
 
 .op a{
-  color: #ff6f00;
+  color: #fa8d39;
   text-decoration: none;
   font-size: 40px;
+}
+
+.non{
+  color: #ae0606;
+}
+
+.non:hover{
+  color: #d1e8e2;
+  transition: 0.42s;
 }
 
 .op a:hover{
@@ -660,7 +669,7 @@ nav ul li{
 }
 
 .p6{
-  left: 120px;
+  left: 95px;
   top: 575px;
 }
 
@@ -672,25 +681,25 @@ nav ul li{
 
 .sup1{
   height: 60px;
-  left: 120px;
+  left: 100px;
   top: 650px;
   border-radius: 30px;
 }
 .sup2{
   height: 60px;
-  left: 250px;
+  left: 230px;
   top: 650px;
   border-radius: 30px;
 }
 .sup3{
   height: 60px;
-  left: 120px;
+  left: 100px;
   top: 750px;
   border-radius: 30px;
 }
 .sup4{
   height: 60px;
-  left: 250px;
+  left: 230px;
   top: 750px;
   border-radius: 30px;
 }
@@ -742,7 +751,7 @@ font-size: 25px;
 
 .nomcard{
     width: 200px;
-    height: 380px;
+    height: 420px;
     flex-shrink: 0;
     text-align: center;
     border-radius: 20px;
@@ -771,7 +780,7 @@ font-size: 25px;
 }
 
 .queandans{
-  padding-left: 70px;
+  padding-left: 40px;
 }
 
 .menu {
@@ -824,7 +833,7 @@ font-size: 25px;
 }
 
 footer nav{
-  left: 100px;
+  left: 80px;
 }
 
 .imp{
