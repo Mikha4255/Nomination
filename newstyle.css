@@ -22,7 +22,7 @@ p{
 div{
  background-color: #1d1102;
 }
-
+ 
 .logo img{
     height: 100px;
 }
@@ -38,13 +38,13 @@ header{
 
 nav{
     position: absolute;
-    right: 150px;
+    right: 80px;
 }
 
 nav ul{
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 nav ul li{
@@ -246,6 +246,7 @@ hr {
     filter: blur(100px);
     animation: swing 10s infinite ease-in-out;
     opacity: 0.6;
+    z-index: 2;
   }
   
   /* Лучи, направленные ВВЕРХ */
@@ -266,9 +267,17 @@ hr {
   }
   
   .up-right {
-    right: -250px;
+    right: -200px;
     transform: rotate(-15deg);
     transform-origin: bottom right;
+  }
+
+  .answ1, .answ2{
+    top: 3000px;
+  }
+
+  .answ7, .answ8{
+    top: 2000px;
   }
   
   /* Лучи, направленные ВНИЗ */
@@ -292,6 +301,14 @@ hr {
     right: -200px;
     transform: rotate(15deg);
     transform-origin: top right;
+  }
+
+  .answ3, .answ4{
+    top: 4500px;
+  }
+
+  .answ5, .answ6{
+    top: 3900px;
   }
   
   /* Анимация */
@@ -592,6 +609,42 @@ hr {
   }
 }
 
+.hey{
+  height: 2000px;
+}
+
+.musicpause{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  border: 3px solid #ff6f00;
+  border-radius: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 1200px;
+  position: relative;
+  height: 1900px;
+  top: 50px;
+  left: 120px;
+  text-align: center;
+  align-items: center;
+}
+
+iframe{
+  margin: 20px 0px;
+}
+
+.mu{
+  width: 600px;
+  height: 200px;
+}
+
+
+.musicpause h2{
+  font-size: 50px;
+  color: rgba(255, 95, 31, 0.9);
+}
+
 footer{
   position: relative;
   text-align: center;
@@ -622,8 +675,8 @@ footer ul{
 footer nav{
   display: flex;
   position: absolute;
-  left: 620px;
-  bottom: -150px ;
+  left: 570px;
+  bottom: -220px ;
 }
 footer nav ul{
   list-style: none;
@@ -646,20 +699,25 @@ footer nav a{
     width: 100%;
     overflow-x: hidden;
   }
+
+  header{
+    padding: 10px 5px;
+  }
+
   .logo img{
-    height: 50px;
-}
+    height: 30px;
+  }
 
   nav{
-    right: 50px;
-}
+    right: 5px;
+  }
 
 nav ul{
     gap: 5px;
 }
 
 nav ul li{
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .intr{
@@ -753,6 +811,22 @@ nav ul li{
   height: 50vh;
 }
 
+.answ1, .answ2{
+    top: 9000px;
+}
+
+.answ7, .answ8{
+    top: 3200px;
+  }
+
+.answ5, .answ6{
+    top: 3600px;
+}
+
+.answ3, .answ4{
+    top: 9400px;
+  }
+
 .nom{
   font-size: 30px;
   padding: 10px;
@@ -786,12 +860,13 @@ font-size: 25px;
 }
 
 .nomcard{
-    width: 200px;
-    height: 420px;
+    width: 220px;
+    height: 440px;
     flex-shrink: 0;
+    box-sizing: border-box;
     text-align: center;
     border-radius: 20px;
-    margin: 25px 0px;
+    margin: 5px 0px;
 }
 
 .nomcard:hover{
@@ -868,8 +943,28 @@ font-size: 25px;
   margin: 10px 0px;
 }
 
+.hey{
+  height: 1950px;
+}
+
+.musicpause{
+  width: 350px;
+  height: 1850px;
+  left: 15px;
+}
+
+.mu{
+  width: 300px;
+  height: 150px;
+}
+
+.musicpause h2{
+  font-size: 30px;
+}
+
 footer nav{
-  left: 80px;
+  bottom: -160px;
+  left: 40px;
 }
 
 .imp{
