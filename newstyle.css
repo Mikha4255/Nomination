@@ -37,8 +37,8 @@ header{
 }
 
 nav{
-    position: absolute;
-    right: 80px;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul{
@@ -705,19 +705,16 @@ footer nav a{
   }
 
   .logo img{
-    height: 30px;
+    height: 50px;
   }
 
-  nav{
-    right: 5px;
-  }
 
 nav ul{
-    gap: 5px;
+    gap: 15px;
 }
 
 nav ul li{
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .intr{
