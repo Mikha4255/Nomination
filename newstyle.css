@@ -26,6 +26,11 @@ div{
 .logo img{
     height: 100px;
 }
+
+.logo img:hover{
+    background-image: url("skala.webp");
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -83,6 +88,12 @@ hr {
     position: absolute;
     left: 20px;
     top: 5px;
+}
+
+.small{
+  font-size: 30px;
+  position: absolute;
+  left: 570px;
 }
 
 .p1{
@@ -158,8 +169,8 @@ hr {
     top: 140px;
 }
 
-.img1:active{
-  background-image: url("42.gif");
+.img1:hover{
+  background-image: url("skala.webp");
 }
 
 .sup1{
@@ -191,6 +202,7 @@ hr {
     border-radius: 50px;
 }
 
+
 .bord{
     position: relative;
     top: 50px;
@@ -220,13 +232,14 @@ hr {
 }
 
 .op a{
-  color: #fa8d39;
+  color: #ae0606;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .non{
   color: #ae0606;
+  font-size: 35px;
 }
 
 .non:hover{
@@ -274,10 +287,12 @@ hr {
 
   .answ1, .answ2{
     top: 3000px;
+    z-index: 0;
   }
 
   .answ7, .answ8{
     top: 2000px;
+    z-index: 0;
   }
   
   /* Лучи, направленные ВНИЗ */
@@ -725,6 +740,10 @@ nav ul li{
 .intr h1{
   left: 80px;
   top: 10px;
+}
+
+.small{
+  left: 260px;
 }
 
 .bord{
