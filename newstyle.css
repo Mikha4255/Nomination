@@ -222,6 +222,21 @@ hr {
     text-align: center;
 }
 
+.sabl a{
+  color: #6bd629;
+  text-decoration: none;
+}
+
+.sabl a:hover{
+  color: #f1d26c;
+  transition: 0.55s;
+}
+
+.reco{
+  width: 800px;
+  height: 600px;
+}
+
 .ma{
     color: #ff6f00;
 }
@@ -439,7 +454,7 @@ hr {
 
 .nomcard{
     width: 300px;
-    height: 450px;
+    height: 500px;
     flex-shrink: 0;
     text-align: center;
     border: 3px solid rgba(255, 95, 31, 0.5);
@@ -489,7 +504,7 @@ hr {
 }
 
 .nomcard p{
-    font-size: 20px;
+    font-size: 25px;
     color: #ff6f00;
 }
 
@@ -857,6 +872,11 @@ nav ul li{
   font-size: 40px;
 }
 
+.reco{
+  width: 300px;
+  height: 200px;
+}
+
 .op{
   font-size: 25px;
 }
@@ -999,7 +1019,7 @@ font-size: 25px;
 }
 
 .hey{
-  height: 1950px;
+  height: 2200px;
 }
 
 .musicpause{
@@ -1024,6 +1044,10 @@ footer nav{
 
 .imp{
   left: 160px;
+}
+
+.suggest-music-container{
+  left: 60px;
 }
 
 }
