@@ -556,7 +556,7 @@ hr {
 }
 
 .dropdown label{
-  width: 1300px;
+  width: 1100px;
   font-family: "DM Serif Text", serif;
   font-size: 30px;
   text-align: center;
@@ -568,6 +568,7 @@ hr {
   box-sizing: border-box;
   height: 80px;
   margin-top: 20px;
+  margin-left: 80px;
   cursor: pointer; 
   transition: all 0.3s ease; /* Плавные переходы для всех свойств */
 }
@@ -592,13 +593,13 @@ hr {
 .dropdown-menu li {
   display: block;
   text-align: center;
-  width: 1000px;
+  width: 800px;
   color: #d1e8e2;
   font-size: 30px;
   border: 3px solid rgba(255, 95, 31, 0.7);
   border-radius: 30px;
   padding: 8px 12px;
-  margin: 10px 100px 0px;
+  margin: 10px 200px 0px;
 }
 
 .dropdown-menu a{
@@ -640,44 +641,59 @@ hr {
 }
 
 .hey{
-  height: 2200px;
+  align-items: center;
+  text-align: center;
+  color: #ff6f00;
 }
 
-.musicpause{
+.hey h2{
+  font-size: 35px;
+}
+
+.gold{
   display: flex;
-  gap: 20px;
-  flex-direction: column;
-  border: 3px solid #ff6f00;
-  border-radius: 50px;
-  padding: 10px;
+  flex-direction: row;
+  gap: 40px;
+  padding: 20px;
   box-sizing: border-box;
-  width: 1200px;
-  position: relative;
-  height: 1900px;
-  top: 50px;
-  left: 120px;
   text-align: center;
   align-items: center;
-  margin-bottom: 120px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-iframe{
-  margin: 20px 0px;
+.card{
+    width: 200px;
+    height: 280px;
+    flex-shrink: 0;
+    text-align: center;
+    border: 3px solid rgba(255, 0, 0, 0.757);
+    border-radius: 20px;
+    color: #ff6f00;
+    margin: 20px 0px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.mu{
-  width: 600px;
-  height: 200px;
+.card img{
+  height: 150px;
+  width: 150px;
+  border-radius: 30px;
 }
 
-.musicpause:active{
-  background-image: url("logo42.gif");
+.card h3{
+  font-size: 25px;
 }
 
-.musicpause h2{
-  font-size: 50px;
-  color: rgba(255, 95, 31, 0.9);
+.card:hover{
+  transform: scale(1.05);
+  transition: 0.42s;
 }
+
+.card:active{
+  background-image: url("skala.webp");
+}
+
 
 .suggest-music-container {
   text-align: center;
@@ -689,6 +705,9 @@ iframe{
   width: 50%;
   position: relative;
   left: 330px;
+}
+.suggest-music-container:active{
+  background-image: url("logo42.gif");
 }
 
 .suggest-music-btn {
@@ -966,7 +985,7 @@ font-size: 25px;
 }
 
 .queandans{
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .menu {
@@ -990,7 +1009,7 @@ font-size: 25px;
   width: 300px;
   font-size: 22px;
   border-radius: 20px;
-  padding-left: 10px;
+  margin-left: 40px;
   height: 110px;
   margin-top: 20px;
 }
@@ -1015,39 +1034,24 @@ font-size: 25px;
   border: 3px solid rgba(255, 95, 31, 0.7);
   border-radius: 30px;
   padding: 5px;
-  margin: 10px 0px;
-}
-
-.hey{
-  height: 2200px;
-}
-
-.musicpause{
-  width: 350px;
-  height: 1850px;
-  left: 15px;
-}
-
-.mu{
-  width: 300px;
-  height: 150px;
-}
-
-.musicpause h2{
-  font-size: 30px;
+  margin: 10px 50px 10px;
 }
 
 footer nav{
-  bottom: -160px;
-  left: 40px;
+  bottom: -200px;
+  left: 20px;
 }
 
 .imp{
   left: 160px;
 }
 
+.gold{
+  flex-direction: column;
+}
+
 .suggest-music-container{
-  left: 60px;
+  left: 80px;
 }
 
 }
