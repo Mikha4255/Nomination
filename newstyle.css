@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
+
+
 body{
     background-color: #1d1102;
     overflow-x: hidden; 
@@ -312,7 +314,7 @@ hr {
   
   /* Лучи, направленные ВНИЗ */
   .down-left, .down-right {
-    top: 1700px;
+    top: 1000px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background: linear-gradient(
       to bottom,
@@ -506,6 +508,19 @@ hr {
 .nomcard p{
     font-size: 25px;
     color: #ff6f00;
+}
+
+.vote{
+  text-align: center;
+}
+
+.vote h2{
+    color: #ff6f00;
+}
+
+.voteform{
+  width: 700px;
+  height: 700px;
 }
 
 .queandans{
@@ -781,6 +796,7 @@ footer nav a{
   font-family: "Comforter", cursive;
   font-size: 40px;
 }
+
 
 @media(max-width: 560px){
   body {
