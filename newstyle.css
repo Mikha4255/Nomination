@@ -224,6 +224,25 @@ hr {
     text-align: center;
 }
 
+.sabl h2{
+  color: #ff6f00;
+  font-size: 55px;
+}
+
+.mob{
+  width: 420px;
+  height: 420px;
+}
+.moba{
+  display: block;
+  color: #6bd629;
+  text-decoration: none;
+}
+
+.moba:hover{
+  background-image: url("logo42.gif");
+}
+
 .sabl a{
   color: #6bd629;
   text-decoration: none;
