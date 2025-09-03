@@ -15,7 +15,7 @@ body{
 html{
     scroll-behavior: smooth; 
 } 
-
+ 
 p{
     color: #f9c99c;
     font-family: "DM Serif Text", serif; 
@@ -84,6 +84,7 @@ hr {
     justify-content: center;
     height: 850px;
     overflow: hidden;
+    text-shadow: 3px 4px 15px rgba(255, 0, 0, 0.755);
 }
 
 .intr h1{
@@ -96,6 +97,10 @@ hr {
   font-size: 30px;
   position: absolute;
   left: 570px;
+}
+
+h2 {
+  text-shadow: 2px 2px 5px rgba(77, 255, 0, 0.455);
 }
 
 .p1{
@@ -156,19 +161,23 @@ hr {
     border: 3px solid #ff6f00;
     border-radius: 20px;
     padding: 10px;
+    text-shadow: none;
 }
 
 .data{
     color: #ff6f00;
     font-size: 60px;
     font-family: "Comforter", cursive;
-}
+} 
 
 .img1{
     position: absolute;
+    border-radius: 65px;
     height: 370px;
     left: 650px;
     top: 140px;
+    box-shadow: 3px 3px 40px rgba(218, 4, 4, 0.757),
+                inset 3px 3px 40px rgba(218, 4, 4, 0.757);
 }
 
 .img1:hover{
@@ -204,6 +213,11 @@ hr {
     border-radius: 50px;
 }
 
+.kong:hover {
+  transform: scale(1.1);
+  transition: 0.42s;
+}
+
 
 .bord{
     position: relative;
@@ -224,15 +238,20 @@ hr {
     text-align: center;
 }
 
+.sabl h1 {
+  text-shadow: 3px 3px 5px rgba(255, 0, 0, 0.757);
+}
+
 .sabl h2{
   color: #ff6f00;
   font-size: 55px;
 }
 
 .mob{
-  width: 420px;
-  height: 420px;
+  width: 642px;
+  height: 642px;
 }
+
 .moba{
   display: block;
   color: #6bd629;
@@ -483,6 +502,13 @@ hr {
     color: #ff6f00;
     margin: 25px 0px;
     padding: 10px;
+    box-shadow: 3px 3px 5px 15px rgba(140, 65, 12, 0.25);
+    background: linear-gradient(
+        45deg,
+      #1d1102 ,
+      #342208 50%,
+      #1d1102 100%
+    );
 }
 
 .nomcard:hover{
@@ -605,6 +631,12 @@ hr {
   margin-left: 80px;
   cursor: pointer; 
   transition: all 0.3s ease; /* Плавные переходы для всех свойств */
+  background: linear-gradient(
+        135deg,
+      #160c01 ,
+      #342208 50%,
+      #160c01 100%
+    );
 }
 
 .dropdown label:hover{
@@ -707,6 +739,13 @@ hr {
     margin: 20px 0px;
     padding: 10px;
     box-sizing: border-box;
+
+    background: linear-gradient(
+        45deg,
+      #1d1102 ,
+      rgba(75, 13, 13, 0.757) ,
+      rgba(133, 19, 19, 0.757) 
+    );
 }
 
 .card img{
@@ -717,6 +756,7 @@ hr {
 
 .card h3{
   font-size: 25px;
+  text-shadow: 1px 1px 2px rgba(66, 255, 176, 0.58);
 }
 
 .card:hover{
@@ -733,22 +773,32 @@ hr {
   text-align: center;
   margin: 30px 0;
   padding: 20px;
-  background-color: rgb(216, 117, 36);
+  background: linear-gradient(
+        45deg,
+      #281803 ,
+      #432a06 50%,
+      #281803 100%
+    );
   border-radius: 10px;
-  border: 3px dashed #e0e6e4;
-  width: 50%;
+  border: 2px dashed #e0e6e4;
+  width: 32%;
   position: relative;
-  left: 330px;
+  left: 32%;
 }
-.suggest-music-container:active{
+.suggest-music-container:hover{
   background-image: url("logo42.gif");
 }
 
 .suggest-music-btn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: rgb(233, 127, 13);
-  color: rgb(17, 6, 224);
+  background: linear-gradient(
+        90deg,
+      #1d1102 ,
+      #342208 50%,
+      #1d1102 100%
+    );
+  color: rgb(224, 217, 6);
   text-decoration: none;
   border-radius: 5px;
   border: 3px solid #6bd629;
@@ -756,21 +806,17 @@ hr {
 }
 
 .suggest-music-btn:hover {
-  background-color: #af2f2f;
+  background: none;
+  background-color: #ae0606;
   color: #6bd629;
   transition: 0.55s;
-}
-
-.suggest-music-note {
-  margin-top: 10px;
-  color: #d1e8e2;
-  font-size: 16px;
 }
 
 footer{
   position: relative;
   text-align: center;
   align-items: center;
+
   margin-top: 20px;
   border-top: 3px solid #ff6f00;
   font-size: 25px;
@@ -796,9 +842,9 @@ footer ul{
 
 footer nav{
   display: flex;
-  position: absolute;
-  left: 570px;
-  bottom: -220px ;
+  justify-content: center;
+  left: 41%;
+  bottom: -75%;
 }
 footer nav ul{
   list-style: none;
