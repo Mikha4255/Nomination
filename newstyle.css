@@ -306,12 +306,105 @@ h2 {
   color: #d1e8e2;
   transition: 0.42s;
 }
+
+.orange {
+  width: 100%;
+  height: 150vh;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(
+       90deg,
+      #c54c05 ,
+      #ff4d00 ,
+      #c54c05
+    );
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  position: relative;
+  z-index: 4;
+}
+
+.decoration_1 {
+  position: relative;
+  z-index: 6;
+  width: 250px;
+  height: 250px;
+  bottom: 350px;
+  right: -47%;
+}
+
+.decoration_2 {
+  position: relative;
+  z-index: 6;
+  width: 250px;
+  height: 250px;
+  bottom: 600px;
+  left: -50%;
+}
+
+.squarde_for_sabl{
+  position: absolute;
+  z-index: 0;
+  bottom: -50px;
+  right: 25%;
+  width: 700px;
+  height: 700px;
+  background: linear-gradient(
+       45deg,
+      #de4808 ,
+      #ff4d00 ,
+      #de4808
+    );
+  transform: rotate(45deg);
+}
+
+  .h2nom{
+    position: relative;
+    z-index: 5;
+      font-size: 84px;
+      color: black ;
+      text-shadow: none;
+  }
+
+.pnom{
+  font-size: 30px;
+  color: #311d04;
+  position: relative;
+  z-index: 5;
+}
+
+.mainnom{
+  display: flex;
+  position: relative;
+  z-index: 5;
+  gap: 120px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  background: linear-gradient(
+       90deg,
+      #c54c05 ,
+      #ff4d00 ,
+      #c54c05
+    );
+}
+
+.mainnom div {
+    box-shadow: -15px 15px 5px 25px rgba(0, 0, 0, 0.509);
+}
+
+.rays_position{
+  position: relative;
+}
+
+
 /* Базовые стили для всех лучей */
 .ray {
     position: absolute;
-    width: 400px;
-    height: 100vh;
-    filter: blur(100px);
+    width: 200px;
+    height: 140vh;
+    filter: blur(150px);
     animation: swing 10s infinite ease-in-out;
     opacity: 0.6;
     z-index: 2;
@@ -319,40 +412,32 @@ h2 {
   
   /* Лучи, направленные ВВЕРХ */
   .up-left, .up-right {
-    top: 1000px;
     clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
     background: linear-gradient(
       to top,
-      rgba(255, 95, 31, 0.9),
+      rgba(225, 90, 37, 0.9),
       rgba(255, 95, 31, 0.1)
     );
   }
   
   .up-left {
-    left: -200px;
-    transform: rotate(15deg);
+    left: 50px;
+    transform: rotate(25deg);
     transform-origin: bottom left;
   }
   
   .up-right {
-    right: -200px;
-    transform: rotate(-15deg);
+    right: 50px;
+    transform: rotate(-25deg);
     transform-origin: bottom right;
   }
-
-  .answ1, .answ2{
-    top: 3000px;
-    z-index: 0;
-  }
-
-  .answ7, .answ8{
-    top: 2000px;
-    z-index: 0;
-  }
   
+  .answ1, .answ2 {
+    bottom: 0px;
+  }
+
   /* Лучи, направленные ВНИЗ */
-  .down-left, .down-right {
-    top: 1000px;
+  .down-left, .down-right, .down-left_2, .down-right_2 {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background: linear-gradient(
       to bottom,
@@ -362,40 +447,47 @@ h2 {
   }
   
   .down-left {
-    left: -200px;
-    transform: rotate(-15deg);
+    left: -75px;
+    transform: rotate(-50deg);
+    transform-origin: top left;
+  }
+
+  .down-left_2 {
+    left: 30%;
+    transform: rotate(25deg);
     transform-origin: top left;
   }
   
   .down-right {
-    right: -200px;
-    transform: rotate(15deg);
+    right: -75px;
+    transform: rotate(50deg);
     transform-origin: top right;
   }
 
-  .answ3, .answ4{
-    top: 4500px;
+  .down-right_2 {
+    transform: rotate(-25deg);
+    transform-origin: top right;
   }
 
-  .answ5, .answ6{
-    top: 3900px;
+  .answ3, .answ4 {
+    bottom: -2100px;
   }
-  
+  .answ5 {
+    bottom: -1950px;
+  }
+
+  .answ6 {
+    bottom: -1950px;
+    left: 55%;
+  }
+
   /* Анимация */
   @keyframes swing {
-    0%, 100% {
-      transform: rotate(30deg);
-      opacity: 0.6;
-    }
-    25% {
-      transform: rotate(50deg);
-    }
     50% {
-      transform: rotate(15deg);
-      opacity: 1;
-    }
-    75% {
-      transform: rotate(10deg);
+      transform: rotate(60deg);
+    } 
+    100% {
+      transform: rotate(25deg);
     }
   }
   
@@ -405,19 +497,11 @@ h2 {
   }
   
   @keyframes swing-mirror {
-    0%, 100% {
-      transform: rotate(-30deg);
-      opacity: 0.6;
-    }
-    25% {
-      transform: rotate(-10deg);
-    }
     50% {
-      transform: rotate(-15deg);
-      opacity: 1;
+      transform: rotate(-60deg);
     }
-    75% {
-      transform: rotate(-50deg);
+    100% {
+      transform: rotate(-25deg);
     }
   }
   
@@ -427,17 +511,37 @@ h2 {
   }
   
   @keyframes swing-down {
-    0%, 100% {
-      transform: rotate(-30deg);
-    }
-    25% {
-      transform: rotate(-40deg);
-    }
     50% {
-      transform: rotate(-10deg);
+      transform: rotate(-25deg);
     }
-    75% {
-      transform: rotate(-5deg);
+    100% {
+      transform: rotate(-50deg);
+    }
+  }
+
+  .down-left_2 {
+    animation-name: swing-down-2 ;
+  }
+
+  @keyframes swing-down-2 {
+    50% {
+      transform: rotate(-25deg);
+    }
+    100% {
+      transform: rotate(25deg);
+    }
+  }
+
+  .down-right_2 {
+    animation-name: swing-down-3 ;
+  }
+
+  @keyframes swing-down-3 {
+    50% {
+      transform: rotate(25deg);
+    }
+    100% {
+      transform: rotate(-25deg);
     }
   }
   
@@ -446,44 +550,35 @@ h2 {
   }
   
   @keyframes swing-down-mirror {
-    0%, 100% {
-      transform: rotate(30deg);
-    }
-    25% {
-      transform: rotate(10deg);
-    }
     50% {
-      transform: rotate(20deg);
-    }
-    75% {
-      transform: rotate(40deg);
+      transform: rotate(25deg);
+    } 
+    100% {
+      transform: rotate(50deg);
     }
   }
 
 .nom{
+  position: relative;
     color: #ff6f00;
     font-size: 40px;
     padding: 10px;
     text-align: center;
+    top: 200px;
 }
 
-.nom h2{
-    font-size: 70px;
+
+
+.most_nom{
+    display: flex;
+    gap: 60px;
+    flex-wrap: nowrap;
+    padding: 10px 50px;
+    overflow-x: auto; 
+    overflow-y: hidden; 
 }
 
-.nom p{
-  font-size: 30px;
-}
-
-.mainnom{
-  display: flex;
-  gap: 40px;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.allnom{
+.extra_nom{
     display: flex;
     gap: 60px;
     flex-wrap: nowrap;
@@ -523,7 +618,7 @@ h2 {
     border-radius: 20px;
 }
 
-.mem:active{
+.mem:hover{
   background-image: url("logo42.gif");
 }
 
@@ -566,6 +661,11 @@ h2 {
 .voteform{
   width: 700px;
   height: 700px;
+}
+
+.answers {
+  position: relative;
+  top: 150px;
 }
 
 .queandans{
@@ -637,9 +737,10 @@ h2 {
       #342208 50%,
       #160c01 100%
     );
-}
+} 
 
 .dropdown label:hover{
+  background: none;
   background-color: #311d04;
   color: #e0e6e4;
   transition: 0.42s;
@@ -707,6 +808,8 @@ h2 {
 }
 
 .hey{
+  position: relative;
+  top: 150px;
   align-items: center;
   text-align: center;
   color: #ff6f00;
@@ -816,7 +919,7 @@ footer{
   position: relative;
   text-align: center;
   align-items: center;
-
+  top: 150px;
   margin-top: 20px;
   border-top: 3px solid #ff6f00;
   font-size: 25px;
@@ -870,16 +973,15 @@ footer nav a{
   }
 
   header{
-    padding: 10px 5px;
+    padding: 10px 42px 10px 5px;
   }
 
   .logo img{
     height: 50px;
-  }
-
-
+  } 
+  
 nav ul{
-    gap: 15px;
+    gap: 5px;
 }
 
 nav ul li{
@@ -981,26 +1083,38 @@ nav ul li{
   font-size: 25px;
 }
 
+.h2nom{
+    font-size:50px;
+}
+
+.orange {
+  height: 170vh;
+}
+
+.squarde_for_sabl{
+  bottom: -50px;
+  right: 25%;
+  width: 200px;
+  height: 200px;
+}
+
 .ray {
   width: 200px;
-  height: 50vh;
+  height: 100vh;
 }
 
-.answ1, .answ2{
-    top: 9000px;
-}
-
-.answ7, .answ8{
-    top: 3200px;
-  }
-
-.answ5, .answ6{
-    top: 3600px;
+.answ1, .answ2 {
+  bottom: 10px;
 }
 
 .answ3, .answ4{
-    top: 9400px;
-  }
+  bottom: -2300px;
+}
+
+.down-left_2, .down-right_2 {
+  width: 0px;
+  height: 0px;
+}
 
 .nom{
   font-size: 30px;
@@ -1008,7 +1122,7 @@ nav ul li{
 }
 
 .nom h2{
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .nom p{
@@ -1017,14 +1131,14 @@ font-size: 25px;
 
 .mainnom{
   display: flex;
-  gap: 10px;
+  gap: 60px;
   padding: 20px 90px;
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
 }
 
-.allnom{
+.most_nom{
     display: flex;
     gap: 60px;
     flex-direction: column;
@@ -1063,6 +1177,18 @@ font-size: 25px;
 
 .nomcard p{
     font-size: 20px;
+}
+
+.que{
+  font-size: 25px;
+}
+
+.quea{
+  font-size: 20px;
+}
+
+.answers{
+  top: 200px;
 }
 
 .queandans{
@@ -1118,21 +1244,25 @@ font-size: 25px;
   margin: 10px 50px 10px;
 }
 
-footer nav{
-  bottom: -200px;
-  left: 20px;
+footer{
+  top: 200px;
 }
 
 .imp{
   left: 160px;
 }
 
+.hey {
+  top: 200px;
+}
+
+.hey h2{
+  font-size: 26px;
+}
+
 .gold{
   flex-direction: column;
 }
 
-.suggest-music-container{
-  left: 80px;
-}
 
 }
