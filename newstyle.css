@@ -50,16 +50,26 @@ nav{
 
 nav ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 nav ul li{
-    display: block;
+    display: inline;
     font-family: "Bellota", system-ui;
     font-size: 25px;
     color: #FFCB9A;
 }
+
+nav li:not(:last-child)::after {
+  content: "|";
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #ff6f00; /* цвет перегородки */
+}
+
 nav ul li a{
     text-decoration: none;
     color: #FFCB9A;
@@ -162,6 +172,52 @@ h2 {
     border-radius: 20px;
     padding: 10px;
     text-shadow: none;
+}
+
+.btn-orange {
+  display: inline-block;
+  position: absolute;
+  bottom: -420px;
+  left: 42px;
+  background: #ff6600;
+  color: black;
+  height: 56px;
+  width: 242px;
+  font-size: 18px;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  font-family: "Bellota", system-ui;
+  box-sizing: border-box;
+}
+
+.btn-orange:hover{
+  color: #d1e8e2;
+  transform: scale(1.1);
+  transition: 0.55s;
+}
+
+.btn-orange::before,
+.btn-orange::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  width: 46px;
+  height: 46px;
+  background: #ff6600;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.btn-orange::before {
+  left: -40px;
+  transform: rotate(180deg);
+}
+
+.btn-orange::after {
+  right: -40px;
 }
 
 .data{
@@ -319,8 +375,8 @@ h2 {
       #ff4d00 ,
       #c54c05
     );
-  border-top-left-radius: 150px;
-  border-top-right-radius: 150px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
   position: relative;
   z-index: 4;
 }
@@ -359,13 +415,13 @@ h2 {
   transform: rotate(45deg);
 }
 
-  .h2nom{
+.h2nom{
     position: relative;
     z-index: 5;
       font-size: 84px;
       color: black ;
       text-shadow: none;
-  }
+}
 
 .pnom{
   font-size: 30px;
@@ -956,6 +1012,13 @@ footer nav ul{
   color: #d1e8e2;
 }
 
+footer nav li:not(:last-child)::after {
+  content: "";
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #ff6f00; /* цвет перегородки */
+}
+
 footer nav a{
   font-size: 25px;
 }
@@ -1108,10 +1171,23 @@ nav ul li{
 }
 
 .answ3, .answ4{
-  bottom: -2300px;
+  bottom: -2250px;
 }
 
 .down-left_2, .down-right_2 {
+  width: 0px;
+  height: 0px;
+}
+
+.h2nom{
+  font-size: 42px;
+}
+
+.pnom{
+  font-size: 25px;
+}
+
+.decoration_1, .decoration_2{
   width: 0px;
   height: 0px;
 }
