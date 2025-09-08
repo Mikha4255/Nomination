@@ -728,11 +728,11 @@ h2 {
   color: #FFCB9A;
   display: flex;
   align-items: center; 
-  padding-left: 60px;
+  justify-content: center;
 }
 
 .quea{
-  font-size: 25px;
+  font-size: 30px;
   color: #ff6f00;
   font-family: "DM Serif Text", serif;
   text-align: center;
@@ -749,21 +749,24 @@ h2 {
 }
 
 .que{
-  font-size: 50px;
+  font-size: 42px;
   color: #ff6f00;
   font-family: "DM Serif Text", serif;
   text-align: center;
 }
 
 .menu {
-  list-style-type: none;
-    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
     width: 80%; 
     max-width: 800px; 
 }
 
 .menu li{
-  width: 600px;
+  width: 100%;
 }
 
 .dropdown {
@@ -772,9 +775,8 @@ h2 {
 }
 
 .dropdown label{
-  width: 1100px;
   font-family: "DM Serif Text", serif;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   display: block;
   border: 3px solid rgba(255, 95, 31, 0.7);
@@ -782,9 +784,8 @@ h2 {
   border-radius: 20px;
   padding: 12px 12px;
   box-sizing: border-box;
-  height: 80px;
+  height: auto;
   margin-top: 20px;
-  margin-left: 80px;
   cursor: pointer; 
   transition: all 0.3s ease; /* Плавные переходы для всех свойств */
   background: linear-gradient(
@@ -803,8 +804,7 @@ h2 {
 }
 
 .dropdown-menu {
-  display: none; 
-    padding: 15px;
+    display: none; 
     margin-top: 10px; 
     border-radius: 15px;
     background-color: #1d1102;
@@ -816,13 +816,13 @@ h2 {
 .dropdown-menu li {
   display: block;
   text-align: center;
-  width: 800px;
+  width: 80%;
   color: #d1e8e2;
   font-size: 30px;
   border: 3px solid rgba(255, 95, 31, 0.7);
   border-radius: 30px;
   padding: 8px 12px;
-  margin: 10px 200px 0px;
+  margin: 10px 10% 0px;
 }
 
 .dropdown-menu a{
@@ -879,12 +879,11 @@ h2 {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  padding: 20px;
+  padding: 5px;
   box-sizing: border-box;
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
-  box-sizing: border-box;
 }
 
 .card{
@@ -895,7 +894,6 @@ h2 {
     border: 3px solid rgba(255, 0, 0, 0.757);
     border-radius: 20px;
     color: #ff6f00;
-    margin: 20px 0px;
     padding: 10px;
     box-sizing: border-box;
 
@@ -1053,7 +1051,7 @@ nav ul li{
 
 .intr{
   font-size: 70px;
-  height: 900px;
+  height: 1000px;
 }
 
 .intr h1{
@@ -1067,7 +1065,7 @@ nav ul li{
 
 .bord{
   width: 400px;
-  height: 600px;
+  height: 700px;
   border-radius: 50px;
 }
 
@@ -1099,7 +1097,7 @@ nav ul li{
 
 .p6{
   left: 95px;
-  top: 575px;
+  top: 675px;
 }
 
 .img1{
@@ -1111,30 +1109,35 @@ nav ul li{
 .sup1{
   height: 60px;
   left: 100px;
-  top: 650px;
+  top: 750px;
   border-radius: 30px;
 }
 .sup2{
   height: 60px;
   left: 230px;
-  top: 650px;
+  top: 750px;
   border-radius: 30px;
 }
 .sup3{
   height: 60px;
   left: 100px;
-  top: 750px;
+  top: 850px;
   border-radius: 30px;
 }
 .sup4{
   height: 60px;
   left: 230px;
-  top: 750px;
+  top: 850px;
   border-radius: 30px;
 }
 
 .sabl{
   font-size: 40px;
+}
+
+.btn-orange {
+  top: 550px;
+  left: 5px;
 }
 
 .reco{
@@ -1151,12 +1154,12 @@ nav ul li{
 }
 
 .orange {
-  height: 170vh;
+  height: 120vh;
 }
 
 .squarde_for_sabl{
   bottom: -50px;
-  right: 25%;
+  right: 35%;
   width: 200px;
   height: 200px;
 }
@@ -1171,7 +1174,7 @@ nav ul li{
 }
 
 .answ3, .answ4{
-  bottom: -2250px;
+  bottom: -2400px;
 }
 
 .down-left_2, .down-right_2 {
@@ -1217,9 +1220,7 @@ font-size: 25px;
 .most_nom{
     display: flex;
     gap: 60px;
-    flex-direction: column;
     padding: 20px 90px;
-    overflow-x: hidden; 
     overflow-y: hidden; 
     align-items: center;
 }
@@ -1267,19 +1268,13 @@ font-size: 25px;
   top: 200px;
 }
 
-.queandans{
-  padding-left: 20px;
-}
-
 .menu {
   list-style-type: none;
-    padding: 0; 
     width: 80%; 
     max-width: 800px; 
 }
 
 .menu li{
-  width: 600px;
   margin-top: 20px;
 }
 
@@ -1289,18 +1284,14 @@ font-size: 25px;
 }
 
 .dropdown label{
-  width: 300px;
   font-size: 22px;
   border-radius: 20px;
-  margin-left: 40px;
-  height: 110px;
   margin-top: 20px;
 }
 
 .dropdown-menu {
   display: none; 
     padding: 15px;
-    margin-top: 10px; 
     border-radius: 15px;
     background-color: #1d1102;
     font-size: 20px;
@@ -1311,13 +1302,11 @@ font-size: 25px;
 .dropdown-menu li {
   display: block;
   text-align: center; 
-  width: 250px;
   color: #d1e8e2;
   font-size: 22px;
   border: 3px solid rgba(255, 95, 31, 0.7);
   border-radius: 30px;
   padding: 5px;
-  margin: 10px 50px 10px;
 }
 
 footer{
