@@ -1178,12 +1178,13 @@ nav ul li{
 }
 
 .orange {
-  height: 120vh;
+  height: 150vh;
+  margin-bottom: 25px;
 }
 
 .squarde_for_sabl{
-  bottom: -50px;
-  right: 35%;
+  bottom: -100px;
+  right: 25%;
   width: 200px;
   height: 200px;
 }
@@ -1198,7 +1199,7 @@ nav ul li{
 }
 
 .answ3, .answ4{
-  bottom: -2400px;
+  bottom: -2200px;
 }
 
 .down-left_2, .down-right_2 {
