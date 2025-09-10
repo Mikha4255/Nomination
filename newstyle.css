@@ -62,7 +62,7 @@ header{
      align-items: center;
     border: 3px solid #1d1102;
     border-radius: 15px;
-    padding: 15px 20px;
+    padding: 15px 80px 15px 10px;
     box-sizing: border-box;
     position: static;
     height: 100px;
