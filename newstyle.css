@@ -34,7 +34,20 @@ div{
 }
 
 .forheader{
-  height: 150px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.forheader p{
+  position: absolute;
+  color: #6bd629;
+  font-size: 25px;
+  bottom: 0px;
+  display: none;
 }
 
 .okaynav {
@@ -1059,6 +1072,13 @@ footer nav a{
 
   header{
     padding: 0px;
+  }
+
+  .forheader p{
+    display: inline-block;
+    bottom: -50px;
+    font-size: 25px;
+    color: #ff3f3f;
   }
 
   .logo img{
