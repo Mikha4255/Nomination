@@ -33,14 +33,30 @@ div{
     background-image: url("skala.webp");
 }
 
+.forheader{
+  height: 150px;
+}
+
+.okaynav {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
 header{
     display: flex;
     justify-content: space-between;
      align-items: center;
     border: 3px solid #1d1102;
     border-radius: 15px;
-    padding: 10px 30px;
-    position: relative;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    position: static;
+    height: 100px;
+}
+
+.fornav{
+  position: relative;
 }
 
 nav{
@@ -818,7 +834,7 @@ h2 {
   text-align: center;
   width: 80%;
   color: #d1e8e2;
-  font-size: 30px;
+  font-size: 22px;
   border: 3px solid rgba(255, 95, 31, 0.7);
   border-radius: 30px;
   padding: 8px 12px;
@@ -1033,8 +1049,16 @@ footer nav a{
     overflow-x: hidden;
   }
 
+  .okaynav{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+  }
+
   header{
-    padding: 10px 42px 10px 5px;
+    padding: 0px;
   }
 
   .logo img{
@@ -1220,6 +1244,7 @@ font-size: 25px;
 .most_nom{
     display: flex;
     gap: 60px;
+    flex-direction: column;
     padding: 20px 90px;
     overflow-y: hidden; 
     align-items: center;
