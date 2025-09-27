@@ -42,6 +42,14 @@ div{
   position: relative;
 }
 
+.formedia{
+  overflow-y: hidden;
+}
+
+main{
+  overflow-y: hidden;
+}
+
 .forheader p{
   position: absolute;
   color: #6bd629;
@@ -1210,6 +1218,10 @@ nav ul li{
   right: 25%;
   width: 200px;
   height: 200px;
+}
+
+.formedia2 {
+   margin-bottom: 200px;
 }
 
 .ray {
