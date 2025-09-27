@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
 
-
 body{
     background-color: #1d1102;
     overflow-x: hidden; 
@@ -14,6 +13,7 @@ body{
 
 html{
     scroll-behavior: smooth; 
+    overflow-x: hidden;
 } 
  
 p{
@@ -1057,8 +1057,11 @@ footer nav a{
 
 
 @media(max-width: 560px){
+  html {
+    overflow-x: hidden;
+  }
+
   body {
-    width: 100%;
     overflow-x: hidden;
   }
 
